@@ -1,0 +1,83 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11>
+Annotation(rdfs:comment "this is a math calculation project"@en)
+
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#4*a>))
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#4*a> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#square>)
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#Attributes:_length,_width>))
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#Attributes:_length,_width> owl:Thing)
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#Attributes:_radius>))
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#Attributes:_radius> owl:Thing)
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#Attributes:_side>))
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#Attributes:_side> owl:Thing)
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#Attributes:_side1,_side2,_side3>))
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#Attributes:_side1,_side2,_side3> owl:Thing)
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#Methods:_area(),_perimeter()>))
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#Methods:_area(),_perimeter()> owl:Thing)
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#base>))
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#base> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#triangle>)
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#circle>))
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#length>))
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#length> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle>)
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#radius>))
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#radius> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#circle>)
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle>))
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle> owl:topObjectProperty)
+AnnotationAssertion(owl:versionInfo <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle> "")
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#side>))
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#side> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#triangle>)
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#sidee>))
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#sidee> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#triangle>)
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#square>))
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#triangle>))
+Declaration(Class(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#width>))
+SubClassOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#width> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle>)
+AnnotationAssertion(rdfs:comment owl:Thing "├── Triangle
+│   ├── Attributes: side1, side2, side3
+│   ├── Methods: area(), perimeter()
+│
+├── Square
+│   ├── Attributes: side
+│   ├── Methods: area(), perimeter()
+│
+├── Rectangle
+│   ├── Attributes: length, width
+│   ├── Methods: area(), perimeter()
+│
+└── Circle
+    ├── Attributes: radius
+    ├── Methods: area(), perimeter()")
+FunctionalObjectProperty(owl:topObjectProperty)
+InverseFunctionalObjectProperty(owl:topObjectProperty)
+SymmetricObjectProperty(owl:topObjectProperty)
+AsymmetricObjectProperty(owl:topObjectProperty)
+TransitiveObjectProperty(owl:topObjectProperty)
+ReflexiveObjectProperty(owl:topObjectProperty)
+IrreflexiveObjectProperty(owl:topObjectProperty)
+ObjectPropertyDomain(owl:topObjectProperty owl:Thing)
+ObjectPropertyRange(owl:topObjectProperty owl:Thing)
+ObjectPropertyRange(owl:topObjectProperty DataAllValuesFrom(owl:topDataProperty xsd:integer))
+Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#circle>))
+Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle>))
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle> owl:topObjectProperty)
+AnnotationAssertion(owl:versionInfo <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle> "")
+SubDataPropertyOf(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle>)
+FunctionalDataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle>)
+DataPropertyDomain(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#Attributes:_length,_width>)
+DataPropertyRange(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle> xsd:integer)
+DisjointDataProperties(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#square>)
+Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#square>))
+DisjointDataProperties(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#square> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle>)
+Declaration(DataProperty(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#triangle>))
+SubDataPropertyOf(owl:topDataProperty <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#rectangle>)
+Declaration(NamedIndividual(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#area>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#perimeter>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#radius>))
+ClassAssertion(<http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#Attributes:_length,_width> <http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-11#radius>)
+)
